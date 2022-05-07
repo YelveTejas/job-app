@@ -21,6 +21,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Job Applied</th>
+            <th>Salary</th>
           </tr>
         </thead>
         <tbody id="body"></tbody>
@@ -37,15 +38,15 @@
          console.log(elem)
           var tr= document.createElement("tr")
           var td1 = document.createElement("td")
-          td1.innerText=elem.name
+          td1.innerText=elem.dname
           var td2 = document.createElement("td")
-          td2.innerText=elem.email
+          td2.innerText=elem.dmail
           var td3 = document.createElement("td")
-          td3.innerText=elem.job
+          td3.innerText=elem.drole
           var td4 = document.createElement("td")
-          td4.innerText=elem.salary
+          td4.innerText=elem.dsalary
           
-          tr.append(td1,td2,td3,td4,td4)
+          tr.append(td1,td2,td3,td4)
           document.querySelector("tbody").append(tr)
        });
       }
